@@ -1,0 +1,55 @@
+---
+title: "Version Control"
+output: html_notebook
+---
+
+
+**What is version control?** 
+
+Version control is a system that records changes that are made to a file or a set of files over time. *As you make edits, the version control system takes snapshots of your files and the changes, and then saves those snapshots so you can refer or revert back to previous versions later if need be!* If you’ve ever used the “Track changes” feature in Microsoft Word, you have seen a rudimentary type of version control, in which the changes to a file are tracked, and you can either choose to keep those edits or revert to the original format. Version control systems, like Git, are like a more sophisticated “Track changes” - in that they are far more powerful and are capable of meticulously tracking successive changes on many files, with potentially many people working simultaneously on the same groups of files.
+
+**Common Terms Used**
+
+files are hosted in a *repository* that is shared online with collaborators. You *pull* the repository’s contents so that you have a local copy of the files that you can edit. Once you are happy with your changes to a file, you *stage* the file and then *commit* it. You *push* this commit to the shared online repository. This uploads your new file and all of the changes and is accompanied by a message explaining what changed, why and by whom.
+
+
+**Git**
+
+As you may remember from our last lecture, Git is the free and open source version control system which GitHub is built on.
+
+One of the main benefits of using the Git system is its compatibility with RStudio; however, in order to link the two software together, we first need to download and install Git on your computer.
+
+**Configuring Git**
+
+Now that Git is installed, we need to configure it for use with GitHub, in preparation for linking it with RStudio.
+
+We need to tell Git what your username and email are, so that it knows how to name each commit as coming from you. To do so, in the command prompt (either Git Bash for Windows or Terminal for Mac), type: *git config --global user.name "Jane Doe"* with your desired username in place of “Jane Doe.” This is the name each commit will be tagged with.
+
+Following this, in the command prompt, type: git config --global user.email janedoe@gmail.com MAKING SURE TO USE THE SAME EMAIL ADDRESS YOU SIGNED UP FOR GITHUB WITH!
+
+**Confirming your configuration**
+
+At this point, you should be set for the next step, but just to check, confirm your changes by typing: *git config --list*. It produces the f/o output :
+
+$ git config --list
+
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+credential.helper=manager
+core.editor="C:\Users\cmidu\AppData\Local\Programs\Microsoft VS Code\Code.exe" --wait
+user.name=Nival Kolambage
+user.email=cmiduna@gmail.com
+
+
+
+
+
