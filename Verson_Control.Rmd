@@ -63,6 +63,9 @@ In that same RStudio option window, click “Create RSA Key” and when this com
 
 Following this, in that same window again, click “View public key” and copy the string of numbers and letters. Close this window.
 
+You have now created a key that is specific to you which we will provide to GitHub, so that it knows who you are when you commit a change from within RStudio.
+
+To do so, go to github.com/, log-in if you are not already, and go to your account settings. There, go to “SSH and GPG keys” and click “New SSH key”. Paste in the public key you have copied from RStudio into the Key box and give it a Title related to RStudio. Confirm the addition of the key with your GitHub password.
 
 
 *Linking this project with GitHub*
@@ -76,9 +79,6 @@ You should see that there is an option to “Push an existing repository from th
 
 When you re-open your project in RStudio, you should now have access to the Git tab in the upper right quadrant and can push to GitHub from within RStudio any future changes.
 
-You have now created a key that is specific to you which we will provide to GitHub, so that it knows who you are when you commit a change from within RStudio.
-
-To do so, go to github.com/, log-in if you are not already, and go to your account settings. There, go to “SSH and GPG keys” and click “New SSH key”. Paste in the public key you have copied from RStudio into the Key box and give it a Title related to RStudio. Confirm the addition of the key with your GitHub password.
 
 
 
