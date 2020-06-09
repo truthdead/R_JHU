@@ -79,6 +79,7 @@ You should see that there is an option to “Push an existing repository from th
 
 When you re-open your project in RStudio, you should now have access to the Git tab in the upper right quadrant and can push to GitHub from within RStudio any future changes.
 
+Hope that helps!
 
 
 
