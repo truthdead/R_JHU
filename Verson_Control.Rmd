@@ -81,6 +81,9 @@ When you re-open your project in RStudio, you should now have access to the Git 
 
 Hope that helps!
 
+Also if there's any error in pushing :
+
+in GIT cmd : type "git pull origin master" --> then type "git push origin master" (this may be happening because of the license and the readme file)
 
 
 
